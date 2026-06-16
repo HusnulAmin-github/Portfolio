@@ -114,8 +114,8 @@ Website: ${window.location.origin}
           {/* Header Card */}
           <div className="p-5 rounded-lg bg-brand-surface-container border border-brand-outline-variant/30 flex items-start justify-between">
             <div className="space-y-1">
-              <h3 className="font-bold text-xl text-brand-on-surface">Web Developer</h3>
-              <p className="text-xs font-mono text-brand-primary font-bold">SPESIALIS INTERFAS WEB PRESTASI TINGGI</p>
+              <h3 className="font-bold text-xl text-brand-on-surface">HUSNUL AMIN</h3>
+              <p className="text-xs font-mono text-brand-primary font-bold">Web Developer</p>
               <p className="text-xs text-brand-on-surface-variant">Pekanbaru, Riau | husnulamin8.work@gmail.com</p>
             </div>
             <div className="p-3 bg-brand-primary/10 text-brand-primary rounded-full">
