@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Theme color configuration targeting the custom HTML spec */
+  --color-brand-primary: #adc6ff;
+  --color-brand-primary-container: #4d8eff;
+  --color-brand-on-primary: #002e6a;
+  --color-brand-surface: #101415;
+  --color-brand-surface-container: #1d2022;
+  --color-brand-surface-container-high: #272a2c;
+  --color-brand-surface-container-highest: #323537;
+  --color-brand-surface-container-low: #191c1e;
+  --color-brand-surface-container-lowest: #0b0f10;
+  --color-brand-background: #101415;
+  --color-brand-on-background: #e0e3e5;
+  --color-brand-on-surface: #e0e3e5;
+  --color-brand-on-surface-variant: #c2c6d6;
+  --color-brand-outline-variant: #424754;
+  --color-brand-outline: #8c909f;
+}
+
+/* Base custom resets */
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+  background-color: var(--color-brand-background);
+  color: var(--color-brand-on-background);
+}
+
+body {
+  background-color: var(--color-brand-background);
+  color: var(--color-brand-on-background);
+}
+
+/* Background code-like dot pattern */
+.code-pattern {
+  background-image: radial-gradient(var(--color-brand-outline-variant) 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.12;
+}
+
+/* Glass panel containers */
+.glass-panel {
+  background: rgba(16, 20, 21, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(140, 144, 159, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel:hover {
+  border-color: rgba(173, 198, 255, 0.6);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Interactive tech chips */
+.tech-chip {
+  background-color: var(--color-brand-surface-container-highest);
+  border: 1px solid rgba(140, 144, 159, 0.2);
+  color: var(--color-brand-on-surface-variant);
+  font-weight: 500;
+}
+
+/* Custom scrollbar to match the futuristic sleek theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-surface-container-lowest);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-surface-container-highest);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-primary);
+}
